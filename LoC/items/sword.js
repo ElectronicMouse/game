@@ -1,4 +1,4 @@
-import * as material from "materials.js";
+import * as material from "./materials/materials.js";
 //-------------------------------------------------------
 
 
