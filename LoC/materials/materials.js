@@ -1,3 +1,8 @@
 //actual properties will be different based on balancing in future
-export const IRON = [{hardness: 4, flexibility: 1, element:"metal", type:"metal", weight:"heavy"}, [false]]
-export const BAMBOO = [{weight: "light", flexibility: 6, toughness: 4, element:"wood", type:"wood"},[false]];  
+//LIST_OF_PROPERTIES: 
+export const LIST = ["hardness", "flexibility", "toughness"];
+//LIST_OF_STANDARDIZED_PROPERTIES: 
+export const LIST_STANDARDIZED = ["type", "element", "weight"]
+//materials
+export const IRON = [{weight:"heavy", element:"metal", hardness: 4, flexibility: 1, type:"metal"}, [false]];
+export const BAMBOO = [{weight: "light", element:"wood", flexibility: 6, toughness: 4, type:"wood"},[false]];
