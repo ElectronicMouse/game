@@ -1,0 +1,19 @@
+LoC
+	Items
+		sword.js
+	Logs
+	Materials
+		materials.js //update it to have more materials
+	node_modules //important, dont touch
+	Pages
+		crafting-menu.html
+		//to be made: inventory.html, expedition.html
+	Styles
+	script.js
+	game.html
+	package.json
+	package-lock.json
+
+
+flow:
+	game.html shows main game menu => to respective parts of game
