@@ -1,0 +1,8 @@
+This is a log message
+This is a log message
+
+2023-03-28T18:15:12.730Z; ERROR; app.js:42; Something went wrong
+2023-03-28T18:15:16.810Z; ERROR; app.js:42; Something went wrong
+2023-03-28T18:20:43.137Z; ERROR; app.js:42; Something went wrong
+2023-03-28T18:20:50.715Z; ERROR; app.js:42; Something went wrong
+2023-03-28T18:21:07.912Z; ERROR; app.js:42; Something went wrong

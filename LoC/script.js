@@ -1,37 +1,53 @@
-const express = require('express');
-const app = express();
-const http = require('http');
-const socketio = require('socket.io');
+// Import the necessary modules
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
+const url = require('url');
 
-// Serve the HTML page
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/login/index.html');
-});
+// Keep a reference to the window object so it doesn't get garbage collected
+let mainWindow;
 
-// Create the HTTP server
-const server = http.createServer(app);
-
-// Initialize Socket.io with the HTTP server
-const io = socketio(server);
-
-// Handle Socket.io connections
-io.on('connection', (socket) => {
-  console.log('A client has connected');
-
-  // Handle Socket.io events for this client
-  socket.on('some_event', (data) => {
-    console.log('Received data from client:', data);
-    // Handle the data as needed
+// Wait until the app is ready to create the window
+app.on('ready', function() {
+  // Create a new browser window
+  mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    frame: false, // Remove window frame
+    webPreferences: {
+      nodeIntegration: true // Allow access to Node.js modules from client-side JS
+    }
   });
 
-  // Handle Socket.io disconnections for this client
-  socket.on('disconnect', () => {
-    console.log('A client has disconnected');
+  // Load the start menu HTML file
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, 'start_menu.html'),
+    protocol: 'file:',
+    slashes: true
+  }));
+
+  // Open the DevTools for debugging
+  // mainWindow.webContents.openDevTools();
+
+  // When the window is closed, dereference the object
+  mainWindow.on('closed', function() {
+    mainWindow = null;
   });
 });
 
-// Start the server and listen on a port
-const PORT = 3000;
-server.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
-});
+// Define game logic here
+function startNewGame() {
+  // Code to start a new game
+}
+
+function loadGame() {
+  // Code to load a saved game
+}
+
+function showCredits() {
+  // Code to display the credits screen
+}
+
+// Set up event listeners for the start menu buttons
+document.getElementById('new-game-button').addEventListener('click', startNewGame);
+document.getElementById('load-game-button').addEventListener('click', loadGame);
+document.getElementById('credits-button').addEventListener('click', showCredits);
