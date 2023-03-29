@@ -1,0 +1,24 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "this file is not here for others to explain what am doing, because even I do not really know that",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElectronicMouse/game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElectronicMouse/game/issues"
+  },
+  "homepage": "https://github.com/ElectronicMouse/game#readme",
+  "dependencies": {
+    "electron": "^23.2.0"
+  }
+}

@@ -1,0 +1,2 @@
+29/03/2023, 21:28:50; INFO; script.js:14; Input received: yes
+29/03/2023, 21:36:24; INFO; script.js:14; Input received: Ahoj

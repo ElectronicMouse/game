@@ -1,48 +1,61 @@
 {
-"Name": "",
-"Sect": "",
-"Inner Cultivation Art": "",
-"Movement Cultivation Art": "",
-"Eye Cultivation Art": "",
-"Ears Cultivation Art": "",
-"Body Cultivation Art": "",
-"Feng Shui cultivation Art": "",
-"Race": "",
-"Basic Stats": {
-"Cultivation Level": 0,
-"Physical Strength": 0,
-"Speed and Agility": 0,
-"Energy Reserves": 0,
-"Martial Arts Proficiency": 0,
-"Weapon Proficiency": 0,
-"Magic Proficiency": 0,
-"Perception and Awareness": 0,
-"Luck and Fate": 0
-},
-"Elemental Stats": {
-"Fire Affinity": 0,
-"Water Affinity": 0,
-"Wood Affinity": 0,
-"Metal Affinity": 0,
-"Earth Affinity": 0,
-"Yin Affinity": 0,
-"Yang Affinity": 0,
-"Time Affinity": 0,
-"Space Affinity": 0,
-"Ice Affinity": 0,
-"Lightning Affinity": 0,
-"Wind Affinity": 0,
-"Light Affinity": 0,
-"Dark Affinity": 0
-},
-"Skills": {
-"Painting": 0,
-"Calligraphy": 0,
-"Tea Ceremony": 0,
-"Go": 0,
-"Alchemy": 0,
-"Puppets": 0,
-"Talismans": 0,
-"Formations": 0
-}
+    "Name": "",
+    "Sect": "",
+    "Inner Cultivation Art": "",
+    "Movement Cultivation Art": "",
+    "Sensory Cultivation Art": "",
+    "Body Cultivation Art": "",
+    "Feng Shui cultivation Art": "",
+    "Race": "",
+    "Basic Stats": {
+        "Cultivation Level": 0,
+        "Physical Strength": 0,
+        "Speed and Agility": 0,
+        "Energy Reserves": 0,
+        "Martial Arts Proficiency": 0,
+        "Weapon Proficiency": 0,
+        "Magic Proficiency": 0,
+        "Perception and Awareness": 0,
+        "Luck and Fate": 0
+    },
+    "Elemental Stats": {
+        "Fire Affinity": 0,
+        "Water Affinity": 0,
+        "Wood Affinity": 0,
+        "Metal Affinity": 0,
+        "Earth Affinity": 0,
+        "Yin Affinity": 0,
+        "Yang Affinity": 0,
+        "Time Affinity": 0,
+        "Space Affinity": 0,
+        "Ice Affinity": 0,
+        "Lightning Affinity": 0,
+        "Wind Affinity": 0,
+        "Light Affinity": 0,
+        "Dark Affinity": 0
+    },
+    "Skills": {
+        "Painting": 0,
+        "Calligraphy": 0,
+        "Tea Ceremony": 0,
+        "Go": 0,
+        "Alchemy": 0,
+        "Puppets": 0,
+        "Talismans": 0,
+        "Formations": 0
+    },
+    "Equipment": [
+        {
+            "Item": "",
+            "Usage": "",
+            "Quantity": "",
+            "Description": ""
+        },
+        {
+            "Item": "",
+            "Usage": "",
+            "Quantity": "",
+            "Description": ""
+        }
+    ]
 }

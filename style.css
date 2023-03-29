@@ -1,0 +1,11 @@
+:root{
+    background-color: black;
+    color: green;
+
+}
+input {
+    background-color: black;
+    border: 1px rgba(234, 255, 3, 0.436);
+    color: white;
+
+}
