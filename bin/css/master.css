@@ -1,0 +1,14 @@
+@import url(gamewindow.css);
+@import url(character.css);
+
+
+:root{
+    background-color: black;
+    color: green;
+
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
