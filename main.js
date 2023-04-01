@@ -1,5 +1,5 @@
 // Import required modules
-const { app, BrowserWindow, screen, ipcMain, ipcRenderer } = require('electron');
+const { app, BrowserWindow, screen, ipcMain} = require('electron');
 const path = require('path');
 const Logger = require('./logs/logger.js');
 const logger = new Logger()
@@ -17,12 +17,12 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
-      preload: path.join(__dirname, 'preload.js')
+      /*preload: path.join(__dirname, 'preload.js')*/
     }
   });
   mainWindow.setFullScreen(true);
   // Load your HTML file
-  mainWindow.loadFile('index.html');
+  mainWindow.loadFile('bin/index.html');
 
 
 
@@ -38,6 +38,9 @@ function createWindow() {
     // Listen for the 'log' event from the renderer process
     ipcMain.on('log', (event, message, logLevel, logLine) => {
         logger.log(message, logLevel, logLine);
+      });
+    ipcMain.on('clearlog', (event) => {
+        logger.clearlog();
       });
     
 }

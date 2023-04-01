@@ -22,6 +22,15 @@ const logTime = date.toLocaleString('en-GB', options);
       }
     });
   }
+  clearlog(){
+    fs.truncate('logs/logfile.txt', function(err) {
+      if (err) {
+        console.log('Error writing to log file:', err);
+      } else {
+        console.log('Log message written to file');
+      }
+    });
+  }
 }
 
 module.exports = Logger;
