@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+
+}
+input {
+    background-color: black;
+    border: 1px rgba(234, 255, 3, 0.408) solid;
+    color: white;
+}
