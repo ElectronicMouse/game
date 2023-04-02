@@ -1,4 +1,2 @@
 # game
-this file is not here for others to explain what am doing, because even I do not really know that
-
-libraries to think about using: Pixi.js, express, Babylon.js, Phaser,
+basically just trying to remake old txt rpg at the moment, except with capability of it being easily and highly modable by anyone who has basic knowledge in web technologies
