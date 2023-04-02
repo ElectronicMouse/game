@@ -1,7 +1,7 @@
 // Import required modules
 const { app, BrowserWindow, screen, ipcMain} = require('electron');
 const path = require('path');
-const Logger = require('./logs/logger.js');
+const Logger = require('./bin/logs/logger.js');
 const logger = new Logger()
 
 // Create a new browser window
