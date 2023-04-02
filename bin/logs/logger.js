@@ -14,7 +14,7 @@ class Logger {
 const logTime = date.toLocaleString('en-GB', options);
     const logEntry = `${logTime}; ${logLevel}; ${logLine}; ${message}\n`;
 
-    fs.appendFile('logs/logfile.txt', logEntry, function(err) {
+    fs.appendFile('./bin/logs/logfile.txt', logEntry, function(err) {
       if (err) {
         console.log('Error writing to log file:', err);
       } else {
@@ -23,7 +23,7 @@ const logTime = date.toLocaleString('en-GB', options);
     });
   }
   clearlog(){
-    fs.truncate('logs/logfile.txt', function(err) {
+    fs.truncate('./bin/logs/logfile.txt', function(err) {
       if (err) {
         console.log('Error writing to log file:', err);
       } else {
