@@ -2,7 +2,9 @@
 const { app, BrowserWindow, screen, ipcMain} = require('electron');
 const path = require('path');
 const Logger = require('./bin/logs/logger.js');
+const Manager = require('./bin/scripts/manager/manager.js')
 const logger = new Logger()
+const manager = new Manager()
 
 // Create a new browser window
 let mainWindow;
@@ -42,7 +44,16 @@ function createWindow() {
     ipcMain.on('clearlog', (event) => {
         logger.clearlog();
       });
-    
+    ipcMain.on('write', (event, oldFilePath, data, newFilePath) => {
+        manager.write(oldFilePath, data, newFilePath);
+      });
+    ipcMain.on('read', (event, filePath, data) => {
+        manager.read(filePath, data);
+      });
+    ipcMain.on('delete', (event, filePath) => {
+        manager.delete(filePath);
+      });     
+      
 }
 
 // When the app is ready, create the window
