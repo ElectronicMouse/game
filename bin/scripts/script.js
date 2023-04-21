@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       characterPicture.src = "character/" + input + "/image/character.png";
     }
 
-    ipcRenderer.send("log", "Input received: " + input, "INFO", "script.js:22");
+    ipcRenderer.send("log", "Input received: " + input, "INFO", "script.js:28");
 
     if (input == "clear") {
       ipcRenderer.send("clearlog");
