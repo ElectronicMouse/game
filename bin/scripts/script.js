@@ -2,7 +2,7 @@ const { ipcRenderer } = require("electron");
 
 document.addEventListener("DOMContentLoaded", function () {
   var myInput = document.getElementById("input");
-  var narratorGreeting = document.getElementById("greeting");
+  var narratorGreeting = document.getElementById("narrator");
   var characterPicture = document.getElementById("character_img");
   myInput.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
