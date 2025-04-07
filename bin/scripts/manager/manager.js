@@ -2,9 +2,7 @@ const fs = require('fs');
 
 class Manager {
 
-    read(path){
-
-
+    read(path, data){
 
     }
     write(oldFilePath, data, newFilePath){
@@ -14,7 +12,7 @@ class Manager {
             fs.writeFile(newFilePath, JSON.stringify(newData))
         });
     }
-    delete(path){}
+    delete(path){fs.unlink(path)}
 
  
 }
